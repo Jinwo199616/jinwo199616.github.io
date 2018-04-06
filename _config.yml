@@ -30,20 +30,16 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# Comments
-disqus_shortname:   default
+
 
 # Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+instagram:          azzurra199616
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           Florence,Italy
+phone:              (039)338-498-6758
+email:              zynyhhxx123@icloud.com
+
 
 # Gems
 gems:
