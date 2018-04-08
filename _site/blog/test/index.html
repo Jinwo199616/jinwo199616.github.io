@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--><html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title>For test!</title>
+<meta name="description" content="">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="/assets/icon/manifest.json">
+<link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+        <header id="header">
+          <a href="/" class="logo">今我</a>
+        </header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            <ul class="links">
+  <li class=""><a href="/">Homepage</a></li>
+  <!-- <li class=""><a href="/about/">关于我</a></li> -->
+  <li class=" active "><a href="/blog/">Blog</a></li>
+
+</ul>
+
+
+						<ul class="icons">
+              <li><a href="https://instagram.com/azzurra199616" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+          <section class="post">
+    				<header class="major">
+      				<span class="date">06 Apr 2018</span>
+      				<h1>For test!</h1>
+      				<p>随便写写啦</p>
+      			</header>
+      			<div class="image main"><img src="/images/pic01.jpg" alt=""></div>
+      			<p></p>
+<h1 id="页面">页面</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>page</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>index</td>
+      <td>主页面</td>
+    </tr>
+    <tr>
+      <td>sudoku</td>
+      <td>数独</td>
+    </tr>
+    <tr>
+      <td>about</td>
+      <td>关于和使用介绍</td>
+    </tr>
+    <tr>
+      <td>set</td>
+      <td>设置界面</td>
+    </tr>
+    <tr>
+      <td>profile</td>
+      <td>个人界面</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="cell类">cell类</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>内容</th>
+      <th>类型</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cat</td>
+      <td>布尔值</td>
+      <td>可填写与否</td>
+    </tr>
+    <tr>
+      <td>note</td>
+      <td>布尔值</td>
+      <td>note与否</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td>字符串值</td>
+      <td>格子中的内容</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>布尔或枚举</td>
+      <td>根据判断结果修改文字颜色</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="数独类">数独类</h1>
+
+<h2 id="变量">变量</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>内容</th>
+      <th>类型</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data</td>
+      <td>cell类(*81)</td>
+      <td>数独表的格子</td>
+    </tr>
+    <tr>
+      <td>row</td>
+      <td>vector/int(*81)</td>
+      <td>记录某一数字在某一行中存在的位置</td>
+    </tr>
+    <tr>
+      <td>col</td>
+      <td>vector/int(*81)</td>
+      <td>记录某一数字在某一列中存在的位置</td>
+    </tr>
+    <tr>
+      <td>zone</td>
+      <td>vector/int(*81)</td>
+      <td>记录某一数字在某一宫中存在的位置</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="函数">函数</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数名</th>
+      <th>返回值</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>getData(x,y)</td>
+      <td>cell类(*81)</td>
+      <td>数独表的格子数据</td>
+    </tr>
+    <tr>
+      <td>setData(x,y,num)</td>
+      <td>null</td>
+      <td>修改data，同时更新记录表信息</td>
+    </tr>
+    <tr>
+      <td>setProperty (再议)</td>
+      <td>null</td>
+      <td>更新cell信息</td>
+    </tr>
+    <tr>
+      <td>judgeCorrect（可选）</td>
+      <td>布尔值</td>
+      <td>判断答案是否正确</td>
+    </tr>
+    <tr>
+      <td>reset</td>
+      <td>null</td>
+      <td>重置数独</td>
+    </tr>
+    <tr>
+      <td>show</td>
+      <td>null</td>
+      <td>调试用</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="sudokupage">Sudoku.page</h1>
+<h2 id="变量-1">变量</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>内容</th>
+      <th>类型</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sudoku</td>
+      <td>sudoku类</td>
+      <td>数独实例</td>
+    </tr>
+    <tr>
+      <td>remainNum</td>
+      <td>int</td>
+      <td>记录宫中剩余个数</td>
+    </tr>
+    <tr>
+      <td>correctOrNot</td>
+      <td>布尔值</td>
+      <td>判断是否成功</td>
+    </tr>
+    <tr>
+      <td>generateOk</td>
+      <td>布尔值</td>
+      <td>判断数据加载情况</td>
+    </tr>
+    <tr>
+      <td>pathStack</td>
+      <td>stack&lt;int[2]&gt;</td>
+      <td>记录做题路径</td>
+    </tr>
+    <tr>
+      <td>timeFlag</td>
+      <td>时间是否开始</td>
+      <td>记录时间开始标记</td>
+    </tr>
+    <tr>
+      <td>noteOrNot</td>
+      <td>布尔值</td>
+      <td>是否开启note模式</td>
+    </tr>
+    <tr>
+      <td>timeOrNot</td>
+      <td>布尔值</td>
+      <td>是否开启时间</td>
+    </tr>
+    <tr>
+      <td>hintOrNor</td>
+      <td>布尔值</td>
+      <td>是否开启高亮同数字模式</td>
+    </tr>
+    <tr>
+      <td>level</td>
+      <td>int</td>
+      <td>游戏难度</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>PS 也可以将设置中要设的值改为软件级别的全局变量
+</code></pre>
+</div>
+
+<h2 id="函数-1">函数</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数名</th>
+      <th>返回值</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>freshUI</td>
+      <td>null</td>
+      <td>更新视图</td>
+    </tr>
+    <tr>
+      <td>judge</td>
+      <td>null</td>
+      <td>判断正确与否</td>
+    </tr>
+    <tr>
+      <td>监听board函数</td>
+      <td>null</td>
+      <td>监听点击哪个cell，更新stack，修改data</td>
+    </tr>
+    <tr>
+      <td>监听table函数</td>
+      <td>null</td>
+      <td>监听点击哪个数字</td>
+    </tr>
+    <tr>
+      <td>redo</td>
+      <td>null</td>
+      <td>撤销</td>
+    </tr>
+    <tr>
+      <td>timeStart</td>
+      <td>null</td>
+      <td>开始时间</td>
+    </tr>
+    <tr>
+      <td>newGame</td>
+      <td>null</td>
+      <td>开始新的游戏</td>
+    </tr>
+    <tr>
+      <td>canvasIdErrorCallback</td>
+      <td>null</td>
+      <td>获取并输出canvas错误事件</td>
+    </tr>
+  </tbody>
+</table>
+
+      		</section>
+
+          <div class="comments-wrapper">
+          <div id="disqus_thread"></div>
+          <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+               */
+
+              var disqus_config = function () {
+                  this.page.url = '/blog/test/';  /*Replace PAGE_URL with your page's canonical URL variable*/
+                  this.page.identifier = '/blog/test/'; /*Replace PAGE_IDENTIFIER with your page's unique identifier variable*/
+              };
+
+              (function() {  /* dont endit below this line */
+                  var d = document, s = d.createElement('script');
+
+                  s.src = 'https://.disqus.com/embed.js';
+
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+        </div>
+<!-- /.comments-wrapper -->
+
+
+					<!-- Footer -->
+						<footer>
+              <ul class="actions">
+                <li><a href="/blog/" class="button">Our Blog</a></li>
+              </ul>
+						</footer>
+					</div>
+
+				<!-- Footer -->
+        <footer id="footer">
+  <section>
+    <form method="POST" action="https://formspree.io/zynyhhxx123@icloud.com">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="3"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message"></li>
+      </ul>
+    </form>
+  </section>
+  <section class="split contact">
+    <section class="alt">
+      <h3>Location</h3>
+      <p>Florence,Italy</p>
+    </section>
+    <section>
+      <h3>Phone</h3>
+      <p><a href="tel:(039)338-498-6758">(039)338-498-6758</a></p>
+    </section>
+    <section class="alt">
+      <h3>WeChat</h3>
+      <p>zhuyaning001</p>
+    </section>
+    <section>
+      <h3>Email</h3>
+      <p><a href="mailto:zynyhhxx123@icloud.com">zynyhhxx123@icloud.com</a></p>
+    </section>
+    <section>
+      <h3>Social</h3>
+      <ul class="icons alt">
+        <li>
+<a href="https://instagram.com/azzurra199616" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a> Personal</li>
+        <li>
+<a href="https://instagram.com/" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a> Work</li>
+      </ul>
+    </section>
+  </section>
+</footer>
+<!-- Copyright -->
+<div id="copyright">
+  <ul>
+<li>© HTML5 UP</li>
+<li>Design by <a href="https://html5up.net">HTML5 UP</a>
+</li>
+<li>Jekyll Integration by <a href="https://somiibo.com">Somiibo</a>
+</li>
+</ul>
+</div>
+
+
+			</div>
+
+      <!-- Scripts -->
+  		<!-- DYN -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+	</body>
+</html>
